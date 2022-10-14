@@ -1,0 +1,28 @@
+
+<p class="small text-danger mt-3">
+    Vaša emailová adresa nebola overená.
+</p>
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-sm btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    <i class="bi bi-check-lg"></i> Overenie e-mailu
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content"> 
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Overenie e-mailovej adresy</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Kliknutím na tlačidlo 'Over e-mail' sa odošle odkaz pomocou ktorého je možné overenie vašej e-mailovej adresy. Platnosť odkazu je 15 minút.</p>
+            </div>
+        <form n:name="form">
+            <button n:name="send" type="submit" class="btn btn-sm btn-success mb-3">
+                <i class="bi bi-check-lg"></i> Over e-mail
+            </button>
+        </form>
+        </div>
+    </div>
+</div>

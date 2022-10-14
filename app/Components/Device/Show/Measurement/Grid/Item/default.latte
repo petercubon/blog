@@ -1,0 +1,81 @@
+<section id="showMeasurementGridItem">
+    <div class="row">
+        <div class="col-12 text-start">
+            <p class=" py-3 d-inline">
+                Prepočet spotreby na základe merania od
+                <span class="badge rounded-pill text-bg-success bg-opacity-75">
+                {$consumption->starttime|date:'d.m.Y H:i'}
+            </span> do
+                <span class="badge rounded-pill text-bg-warning bg-opacity-50">
+                {$consumption->endtime|date:'d.m.Y H:i'}
+            </span>
+            </p>
+            <p class="d-inline float-end ms-2">
+
+            <!-- Button trigger modal -->
+            <a type="button" class="text-danger d-inline nav-link" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <i class="bi bi-trash text-danger"></i> Zmazať
+            </a>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Zmazať meranie?</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            Chcete toto meranie natrvalo odstrániť?
+                        </div>
+                        <div class="modal-footer">
+                            <a n:if="$user->isAllowed($consumption, 'delete')" n:href="deleteMeasurement!" type="button" class="btn btn-danger ajax">
+                                <i class="bi bi-trash"></i> Zmazať
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+{*            <a n:if="$user->isAllowed($consumption, 'delete')" n:href="deleteMeasurement!" class="nav-link ajax">*}
+{*                    <i class="bi bi-trash text-danger"></i> Zmazať meranie*}
+{*            </a>*}
+
+            </p>
+            <p class="d-inline float-end">
+                <a
+                    href="{plink Device:editMeasurement $consumption->id}"
+                    class="nav-link"
+                >
+                    <i class="bi bi-pen text-primary"></i> upraviť meranie
+                </a>
+            </p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-4">
+            <div class="p-3 border bg-light">
+                <p class="fw-bold">Spotreba za 1 hodinu</p>
+                <p>{$consumption->hourlyconsumption / 1e3} kWh za hodinu</p>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="p-3 border bg-light">
+                <p class="fw-bold">
+                    Spotreba za 1 deň
+                </p>
+                <p>{$consumption->dailyconsumption / 1e3} kWh za deň</p>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="p-3 border bg-light">
+                <p class="fw-bold">
+                    Spotreba za 1 rok
+                </p>
+                <p>{$consumption->yearlyconsumption / 1e3} kWh za rok</p>
+            </div>
+        </div>
+    </div>
+</section>

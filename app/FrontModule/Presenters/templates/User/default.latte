@@ -1,0 +1,26 @@
+{block content}
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-sm-2 text-center">
+                <img src="{$baseUrl}/img/avatar.svg" class="img-fluid">
+                {$user->identity->name} {$user->identity->surname}
+                {if $status == 0}
+                    {control emailVerificationForm}
+                {/if}
+
+                <p>Status: {$user->identity->status} </p>
+                <p>Status: {$user->identity->id} </p>
+                <p>Status: {$verification} </p>
+
+            </div>
+            {control userComment}
+        </div>
+    </div>
+{/block}
+
+<script>
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl)
+    })
+</script>

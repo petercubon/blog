@@ -1,28 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="780cac1c-d695-48df-97e9-00ed19496e77" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ftp_deployment_nette_bolg_petercubon_sk/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/cache/latte/Comments-Grid-default.latte--6df8d3aa26.php" beforeDir="false" afterPath="$PROJECT_DIR$/temp/cache/latte/Comments-Grid-default.latte--6df8d3aa26.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/cache/latte/Detail-OtherPosts-default.latte--2f91f045ca.php" beforeDir="false" afterPath="$PROJECT_DIR$/temp/cache/latte/Detail-OtherPosts-default.latte--2f91f045ca.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/cache/latte/Grid-Item-default.latte--c3b43809f0.php" beforeDir="false" afterPath="$PROJECT_DIR$/temp/cache/latte/Grid-Item-default.latte--c3b43809f0.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/cache/latte/Post-Detail-default.latte--62974da6eb.php" beforeDir="false" afterPath="$PROJECT_DIR$/temp/cache/latte/Post-Detail-default.latte--62974da6eb.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/cache/latte/Post-Grid-default.latte--5ef8e7b0b4.php" beforeDir="false" afterPath="$PROJECT_DIR$/temp/cache/latte/Post-Grid-default.latte--5ef8e7b0b4.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/cache/latte/Presenters-templates-@layout.latte--51955f35f9.php" beforeDir="false" afterPath="$PROJECT_DIR$/temp/cache/latte/Presenters-templates-@layout.latte--51955f35f9.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/cache/latte/templates-Device-default.latte--10fd8fff22.php" beforeDir="false" afterPath="$PROJECT_DIR$/temp/cache/latte/templates-Device-default.latte--10fd8fff22.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/cache/latte/templates-Homepage-default.latte--6290a8fa9c.php" beforeDir="false" afterPath="$PROJECT_DIR$/temp/cache/latte/templates-Homepage-default.latte--6290a8fa9c.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/cache/latte/templates-Post-add.latte--ed1d73e00b.php" beforeDir="false" afterPath="$PROJECT_DIR$/temp/cache/latte/templates-Post-add.latte--ed1d73e00b.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/cache/latte/templates-Post-show.latte--dada01ede1.php" beforeDir="false" afterPath="$PROJECT_DIR$/temp/cache/latte/templates-Post-show.latte--dada01ede1.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/cache/latte/templates-Sign-default.latte--df5eb61c79.php" beforeDir="false" afterPath="$PROJECT_DIR$/temp/cache/latte/templates-Sign-default.latte--df5eb61c79.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/cache/nette.configurator/Container_c112abe23c.php" beforeDir="false" afterPath="$PROJECT_DIR$/temp/cache/nette.configurator/Container_c112abe23c.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/cache/nette.configurator/Container_c112abe23c.php.meta" beforeDir="false" afterPath="$PROJECT_DIR$/temp/cache/nette.configurator/Container_c112abe23c.php.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/cache/nette.robotLoader/ea10c8aca8aed498cb13cee01814e510.php" beforeDir="false" afterPath="$PROJECT_DIR$/temp/cache/nette.robotLoader/ea10c8aca8aed498cb13cee01814e510.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/cache/nette.search/8706bf7c2b3392c16ff9b69584cad7d4.php" beforeDir="false" afterPath="$PROJECT_DIR$/temp/cache/nette.search/8706bf7c2b3392c16ff9b69584cad7d4.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/cache/nette.search/8c49d9e7c220909577d6004eb0bebe53.php" beforeDir="false" afterPath="$PROJECT_DIR$/temp/cache/nette.search/8c49d9e7c220909577d6004eb0bebe53.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/cache/nette.search/9c3bda735621dc79a7fe6aebb7a2952e.php" beforeDir="false" afterPath="$PROJECT_DIR$/temp/cache/nette.search/9c3bda735621dc79a7fe6aebb7a2952e.php" afterDir="false" />
-    </list>
+    <list default="true" id="780cac1c-d695-48df-97e9-00ed19496e77" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -89,11 +68,16 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/laragon/www/nette/nette_bw/web_nette_bw",
+    "last_opened_file_path": "C:/laragon/www/nette/nette-bw/app/AdminModule",
     "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\laragon\www\nette\nette-bw\app\AdminModule" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -107,13 +91,23 @@
       <workItem from="1665498599987" duration="172000" />
       <workItem from="1665588837342" duration="5319000" />
       <workItem from="1665594382833" duration="763000" />
+      <workItem from="1665730513402" duration="325000" />
     </task>
+    <task id="LOCAL-00001" summary="commit">
+      <created>1665730646126</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1665730646126</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <option name="LAST_COMMIT_MESSAGE" value="" />
+    <MESSAGE value="commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit" />
   </component>
 </project>
