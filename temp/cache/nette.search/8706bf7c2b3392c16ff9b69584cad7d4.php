@@ -5,22 +5,22 @@ return array (
     'App\\Model\\API\\SklonovanieMien' => 
     array (
       0 => 'C:\\laragon\\www\\nette\\nette_bw\\web_nette_bw\\app\\Model\\API\\SklonovanieMien.php',
-      1 => 1664553458,
+      1 => 1665590471,
     ),
     'App\\Model\\Authenticator' => 
     array (
       0 => 'C:\\laragon\\www\\nette\\nette_bw\\web_nette_bw\\app\\Model\\Authenticator.php',
-      1 => 1665427639,
+      1 => 1665590773,
     ),
     'App\\Model\\AuthorizatorFactory' => 
     array (
       0 => 'C:\\laragon\\www\\nette\\nette_bw\\web_nette_bw\\app\\Model\\AuthorizatorFactory.php',
-      1 => 1665077182,
+      1 => 1665591032,
     ),
     'App\\Model\\BaseManager' => 
     array (
       0 => 'C:\\laragon\\www\\nette\\nette_bw\\web_nette_bw\\app\\Model\\BaseManager.php',
-      1 => 1664210228,
+      1 => 1665591064,
     ),
     'App\\Model\\CommentManager' => 
     array (
@@ -40,7 +40,7 @@ return array (
     'App\\Model\\DeviceManager' => 
     array (
       0 => 'C:\\laragon\\www\\nette\\nette_bw\\web_nette_bw\\app\\Model\\DeviceManager.php',
-      1 => 1664442368,
+      1 => 1665591133,
     ),
     'App\\Model\\Entity\\CommentResource' => 
     array (
@@ -80,37 +80,37 @@ return array (
     'App\\Model\\MailSender' => 
     array (
       0 => 'C:\\laragon\\www\\nette\\nette_bw\\web_nette_bw\\app\\Model\\MailSender.php',
-      1 => 1664622135,
+      1 => 1665591175,
     ),
     'App\\Model\\MailSenderUserRegister' => 
     array (
       0 => 'C:\\laragon\\www\\nette\\nette_bw\\web_nette_bw\\app\\Model\\MailSenderUserRegister.php',
-      1 => 1665424312,
+      1 => 1665591196,
     ),
     'App\\Model\\MyTranslator' => 
     array (
       0 => 'C:\\laragon\\www\\nette\\nette_bw\\web_nette_bw\\app\\Model\\MyTranslator.php',
-      1 => 1663329180,
+      1 => 1665591241,
     ),
     'App\\Model\\PostManager' => 
     array (
       0 => 'C:\\laragon\\www\\nette\\nette_bw\\web_nette_bw\\app\\Model\\PostManager.php',
-      1 => 1665336915,
+      1 => 1665591258,
     ),
     'App\\Model\\RoleManager' => 
     array (
       0 => 'C:\\laragon\\www\\nette\\nette_bw\\web_nette_bw\\app\\Model\\RoleManager.php',
-      1 => 1664208469,
+      1 => 1665591263,
     ),
     'App\\Model\\SettingManager' => 
     array (
       0 => 'C:\\laragon\\www\\nette\\nette_bw\\web_nette_bw\\app\\Model\\SettingManager.php',
-      1 => 1663323379,
+      1 => 1665591284,
     ),
     'App\\Model\\UserManager' => 
     array (
       0 => 'C:\\laragon\\www\\nette\\nette_bw\\web_nette_bw\\app\\Model\\UserManager.php',
-      1 => 1665427727,
+      1 => 1665591291,
     ),
   ),
   1 => 

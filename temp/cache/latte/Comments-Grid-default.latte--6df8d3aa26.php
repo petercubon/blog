@@ -29,7 +29,7 @@ final class Template6df8d3aa26 extends Latte\Runtime\Template
 <section id="postCommentPaginator">
     <div class="container ps-0 pt-3">
         <a class="nav-link text-primary ajax" href="';
-		echo LR\Filters::escapeHtmlAttr($this->global->uiControl->link("loadMore!")) /* line 18 */;
+		echo LR\Filters::escapeHtmlAttr($this->global->uiControl->link("loadMore!")) /* line 16 */;
 		echo '">
             <i class="bi bi-chat-right-dots"></i> Nacitat dalsie komentare
         </a>
@@ -44,7 +44,7 @@ final class Template6df8d3aa26 extends Latte\Runtime\Template
 	{
 		extract($this->params);
 		if (!$this->getReferringTemplate() || $this->getReferenceType() === "extends") {
-			foreach (array_intersect_key(['flash' => '2', 'comment' => '10'], $this->params) as $ʟ_v => $ʟ_l) {
+			foreach (array_intersect_key(['flash' => '2', 'comment' => '9'], $this->params) as $ʟ_v => $ʟ_l) {
 				trigger_error("Variable \$$ʟ_v overwritten in foreach on line $ʟ_l");
 			}
 		}
@@ -88,14 +88,15 @@ final class Template6df8d3aa26 extends Latte\Runtime\Template
 		unset($ʟ_args);
 		$this->global->snippetDriver->enter("comments", 'static');
 		try {
+			echo '    ';
 			$iterations = 0;
-			foreach ($comments as $comment) /* line 10 */ {
-				/* line 11 */ $_tmp = $this->global->uiControl->getComponent("postCommentGridItemMultiple-$comment->id");
+			foreach ($comments as $comment) /* line 9 */ {
+				echo "\n";
+				/* line 10 */ $_tmp = $this->global->uiControl->getComponent("postCommentGridItemMultiple-$comment->id");
 				if ($_tmp instanceof Nette\Application\UI\Renderable) $_tmp->redrawControl(null, false);
 				$_tmp->render();
 				$iterations++;
 			}
-			echo "\n";
 		}
 		finally {
 			$this->global->snippetDriver->leave();

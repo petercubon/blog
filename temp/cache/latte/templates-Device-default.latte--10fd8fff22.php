@@ -73,39 +73,33 @@ final class Template10fd8fff22 extends Latte\Runtime\Template
 
     <section id="showDevices">
         <div class="container py-5 border-top">
-
             <div class="row">
                 <div class="col-12">
                     <h3> Prehľad pridaných zariadení </h3>
                 </div>
             </div>
-
 ';
-		if (($user->isAllowed('showDevices', 'view'))) /* line 36 */ {
-			echo '
-<div id="';
+		if (($user->isAllowed('showDevices', 'view'))) /* line 34 */ {
+			echo '<div id="';
 			echo htmlspecialchars($this->global->snippetDriver->getHtmlId('devices'));
 			echo '">';
-			$this->renderBlock('devices', [], null, 'snippet') /* line 38 */;
+			$this->renderBlock('devices', [], null, 'snippet') /* line 35 */;
 			echo '</div>
-
 ';
 		}
-		else /* line 44 */ {
+		else /* line 38 */ {
 			echo '                        <div class="alert alert-primary w-100" role="alert">
                             Pridané spotrebiče je možné zobraziť po
                             <a class="nav-link d-inline fw-bold" href="';
-			echo LR\Filters::escapeHtmlAttr($this->global->uiControl->link("Sign:in")) /* line 47 */;
+			echo LR\Filters::escapeHtmlAttr($this->global->uiControl->link("Sign:in")) /* line 41 */;
 			echo '">
                                 prihlásení
                             </a>.
                         </div>
 ';
 		}
-		echo '
-                </div>
+		echo '                </div>
             </div>
-
         </div>
     </section>
 
@@ -132,7 +126,7 @@ final class Template10fd8fff22 extends Latte\Runtime\Template
 	}
 
 
-	/** {snippet devices} on line 38 */
+	/** {snippet devices} on line 35 */
 	public function blockDevices(array $ʟ_args): void
 	{
 		extract($this->params);
@@ -140,11 +134,9 @@ final class Template10fd8fff22 extends Latte\Runtime\Template
 		unset($ʟ_args);
 		$this->global->snippetDriver->enter("devices", 'static');
 		try {
-			echo "\n";
-			/* line 40 */ $_tmp = $this->global->uiControl->getComponent("devices");
+			/* line 36 */ $_tmp = $this->global->uiControl->getComponent("devices");
 			if ($_tmp instanceof Nette\Application\UI\Renderable) $_tmp->redrawControl(null, false);
 			$_tmp->render();
-			echo "\n";
 		}
 		finally {
 			$this->global->snippetDriver->leave();

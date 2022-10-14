@@ -35,23 +35,19 @@ final class Templateed1d73e00b extends Latte\Runtime\Template
 		extract($this->params);
 		extract($ʟ_args);
 		unset($ʟ_args);
-		echo '
-    <div class="container pt-3 my-3">
+		echo '    <div class="container pt-3 my-3">
         <div class="row">
             <div class="col">
                 <h3 class="fw-normal">
                     Pridanie noveho clanku
                 </h3>
-
 ';
-		/* line 10 */ $_tmp = $this->global->uiControl->getComponent("postForm");
+		/* line 8 */ $_tmp = $this->global->uiControl->getComponent("postForm");
 		if ($_tmp instanceof Nette\Application\UI\Renderable) $_tmp->redrawControl(null, false);
 		$_tmp->render();
-		echo '
-            </div>
+		echo '            </div>
         </div>
     </div>
-
 ';
 	}
 

@@ -71,97 +71,81 @@ final class Template51955f35f9 extends Latte\Runtime\Template
 						Blog
 					</a>
 				</p>
-
 				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
-
 				<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
 					<div class="navbar-nav ms-auto">
-
 						<a class="nav-link" href="';
-		echo LR\Filters::escapeHtmlAttr($this->global->uiControl->link("Device:default")) /* line 45 */;
+		echo LR\Filters::escapeHtmlAttr($this->global->uiControl->link("Device:default")) /* line 42 */;
 		echo '">
 							<i class="bi bi-app text-primary"></i> Spotreniče
 						</a>
-
 						<a class="nav-link" href="';
-		echo LR\Filters::escapeHtmlAttr($this->global->uiControl->link("Homepage:default")) /* line 49 */;
+		echo LR\Filters::escapeHtmlAttr($this->global->uiControl->link("Homepage:default")) /* line 45 */;
 		echo '">
 							<i class="bi bi-journal-text text-warning"></i> Blog
 						</a>
-
 ';
-		if ($user->isAllowed('post', 'add')) /* line 53 */ {
+		if ($user->isAllowed('post', 'add')) /* line 48 */ {
 			echo '						<a class="nav-link" href="';
-			echo LR\Filters::escapeHtmlAttr($this->global->uiControl->link("Post:add")) /* line 53 */;
+			echo LR\Filters::escapeHtmlAttr($this->global->uiControl->link("Post:add")) /* line 48 */;
 			echo '">
 							<i class="bi bi-plus-circle me-1 text-success"></i> Pridať nový článok
 						</a>
 ';
 		}
-		echo "\n";
-		if ($user->isAllowed('front', 'logout')) /* line 57 */ {
+		if ($user->isAllowed('front', 'logout')) /* line 51 */ {
 			echo '							<a class="nav-link" href="';
-			echo LR\Filters::escapeHtmlAttr($this->global->uiControl->link("Sign:out")) /* line 58 */;
+			echo LR\Filters::escapeHtmlAttr($this->global->uiControl->link("Sign:out")) /* line 52 */;
 			echo '">
 								<i class="bi bi-box-arrow-right me-1 text-danger"></i> Odhlasit
 							</a>
 							<li class="nav-item dropdown">
 								<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 									<i class="bi bi-person"></i>';
-			echo LR\Filters::escapeHtmlText($user->identity->name) /* line 63 */;
+			echo LR\Filters::escapeHtmlText($user->identity->name) /* line 57 */;
 			echo ' ';
-			echo LR\Filters::escapeHtmlText($user->identity->surname) /* line 63 */;
+			echo LR\Filters::escapeHtmlText($user->identity->surname) /* line 57 */;
 			echo '
 								</a>
 								<ul class="dropdown-menu">
 									<li><a class="dropdown-item" href="';
-			echo LR\Filters::escapeHtmlAttr($this->global->uiControl->link("User:default")) /* line 66 */;
+			echo LR\Filters::escapeHtmlAttr($this->global->uiControl->link("User:default")) /* line 60 */;
 			echo '">Môj profil</a></li>
-									<li><hr class="dropdown-divider"></li>
-									<li><a class="dropdown-item" href="#">Something else here</a></li>
 								</ul>
 							</li>
 ';
 		}
-		else /* line 71 */ {
+		else /* line 63 */ {
 			echo '							<a class="nav-link" href="';
-			echo LR\Filters::escapeHtmlAttr($this->global->uiControl->link("Register:default")) /* line 72 */;
+			echo LR\Filters::escapeHtmlAttr($this->global->uiControl->link("Register:default")) /* line 64 */;
 			echo '">
 								<i class="bi bi-person-plus text-info"></i> Registrácia
 							</a>
 							<a class="nav-link" href="';
-			echo LR\Filters::escapeHtmlAttr($this->global->uiControl->link("Sign:default")) /* line 75 */;
+			echo LR\Filters::escapeHtmlAttr($this->global->uiControl->link("Sign:default")) /* line 67 */;
 			echo '">
 								<i class="bi bi-box-arrow-in-right text-success"></i> Prihlasit
 							</a>
 ';
 		}
-		echo '
-
-
-
-
-
-
-';
-		if ($user->isAllowed('admin', 'view')) /* line 86 */ {
+		if ($user->isAllowed('admin', 'view')) /* line 71 */ {
 			echo '						<a href="';
-			echo LR\Filters::escapeHtmlAttr(LR\Filters::safeUrl($baseUrl)) /* line 86 */;
+			echo LR\Filters::escapeHtmlAttr(LR\Filters::safeUrl($baseUrl)) /* line 71 */;
 			echo '/admin/" class="nav-link">
 							Admin panel
 						</a>
 ';
 		}
-		echo '
-					</div>
+		echo '					</div>
 				</div>
 			</div>
 		</nav>
 	</section>
+
 ';
-		$this->renderBlock('content', [], 'html') /* line 104 */;
+		$this->renderBlock('content', [], 'html') /* line 80 */;
 		echo '
 	<section id="footer">
 		<div class="container-fluid mt-4 py-4 bg-primary bg-opacity-50 position-relative bottom-0 end-0">
@@ -177,7 +161,7 @@ final class Template51955f35f9 extends Latte\Runtime\Template
 		if ($this->getParentName()) {
 			return get_defined_vars();
 		}
-		$this->renderBlock('scripts', get_defined_vars()) /* line 116 */;
+		$this->renderBlock('scripts', get_defined_vars()) /* line 92 */;
 		echo '
 </body>
 </html>
@@ -199,7 +183,7 @@ final class Template51955f35f9 extends Latte\Runtime\Template
 	}
 
 
-	/** {block scripts} on line 116 */
+	/** {block scripts} on line 92 */
 	public function blockScripts(array $ʟ_args): void
 	{
 		extract($this->params);
@@ -218,10 +202,10 @@ final class Template51955f35f9 extends Latte\Runtime\Template
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 
 		<script src="';
-		echo LR\Filters::escapeHtmlAttr(LR\Filters::safeUrl($basePath)) /* line 130 */;
+		echo LR\Filters::escapeHtmlAttr(LR\Filters::safeUrl($basePath)) /* line 106 */;
 		echo '/js/plugins/ajax/nette.ajax.js"></script>
 		<script src="';
-		echo LR\Filters::escapeHtmlAttr(LR\Filters::safeUrl($basePath)) /* line 131 */;
+		echo LR\Filters::escapeHtmlAttr(LR\Filters::safeUrl($basePath)) /* line 107 */;
 		echo '/js/main.js"></script>
 ';
 	}

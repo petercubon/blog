@@ -79,23 +79,21 @@ class Container_c112abe23c extends Nette\DI\Container
 		'Nextras\Migrations\Bridges\SymfonyConsole\ContinueCommand' => [['migrations.continueCommand']],
 		'Nextras\Migrations\Bridges\SymfonyConsole\CreateCommand' => [['migrations.createCommand']],
 		'Nextras\Migrations\Bridges\SymfonyConsole\ResetCommand' => [['migrations.resetCommand']],
-		'App\Model\API\SklonovanieMien' => [['01']],
-		'App\Model\MailSenderUserRegister' => [['02']],
-		'Nette\Security\Authenticator' => [['03']],
-		'Nette\Security\IdentityHandler' => [['03']],
-		'Nette\Security\IAuthenticator' => [['03']],
-		'App\Model\Authenticator' => [['03']],
-		'App\Dashboard\Article\Edit\FormFactory' => [['04']],
-		'App\Model\MailSender' => [['05']],
-		'Nette\Security\Authorizator' => [['06']],
-		'Nette\Security\Permission' => [['06']],
+		'App\Model\MailSenderUserRegister' => [['01']],
+		'Nette\Security\Authenticator' => [['02']],
+		'Nette\Security\IdentityHandler' => [['02']],
+		'Nette\Security\IAuthenticator' => [['02']],
+		'App\Model\Authenticator' => [['02']],
+		'App\Model\MailSender' => [['03']],
+		'Nette\Security\Authorizator' => [['04']],
+		'Nette\Security\Permission' => [['04']],
 		'Nette\Localization\Translator' => [['myTranslator']],
 		'App\Model\MyTranslator' => [['myTranslator']],
-		'Nette\Routing\RouteList' => [['07']],
-		'Nette\Routing\Router' => [['07']],
+		'Nette\Routing\RouteList' => [['05']],
+		'Nette\Routing\Router' => [['05']],
 		'ArrayAccess' => [
 			2 => [
-				'07',
+				'05',
 				'application.1',
 				'application.2',
 				'application.3',
@@ -109,10 +107,10 @@ class Container_c112abe23c extends Nette\DI\Container
 				'application.12',
 			],
 		],
-		'Countable' => [2 => ['07']],
-		'IteratorAggregate' => [2 => ['07']],
-		'Traversable' => [2 => ['07']],
-		'Nette\Application\Routers\RouteList' => [['07']],
+		'Countable' => [2 => ['05']],
+		'IteratorAggregate' => [2 => ['05']],
+		'Traversable' => [2 => ['05']],
+		'Nette\Application\Routers\RouteList' => [['05']],
 		'App\AdminModule\Presenters\BasePresenter' => [2 => ['application.1']],
 		'App\Presenters\Presenter' => [
 			2 => ['application.1', 'application.2', 'application.5', 'application.6', 'application.12'],
@@ -301,51 +299,48 @@ class Container_c112abe23c extends Nette\DI\Container
 		'App\Presenters\ErrorPresenter' => [2 => ['application.11']],
 		'NetteModule\ErrorPresenter' => [2 => ['application.13']],
 		'NetteModule\MicroPresenter' => [2 => ['application.14']],
-		'App\Model\BaseManager' => [['08', '09', '010', '011', '012', '013', '014', '015']],
-		'App\Model\CommentManager' => [['08']],
-		'App\Model\ConsumptionManager' => [['09']],
-		'App\Model\DashboardManager' => [['010']],
-		'App\Model\DeviceManager' => [['011']],
-		'App\Model\PostManager' => [['012']],
-		'App\Model\RoleManager' => [['013']],
-		'App\Model\SettingManager' => [['014']],
-		'App\Model\UserManager' => [['015']],
-		'App\Components\Clanok\Mriezka\ControlFactory' => [['016']],
-		'App\Components\Clanok\Mriezka\Polozka\ControlFactory' => [['017']],
-		'App\Components\Comments\Add\ControlFactory' => [['018']],
-		'App\Components\Comments\Add\FormFactory' => [['019']],
-		'App\Components\Comments\DeleteComment\FormFactory' => [['020']],
-		'App\components\Comments\FormFactory' => [['021']],
-		'App\Components\Comments\Grid\ControlFactory' => [['022']],
-		'App\Components\Comments\Grid\Item\ControlFactory' => [['023']],
-		'App\Components\Device\Add\Device\ControlFactory' => [['024']],
-		'App\Components\Device\Add\Device\FormFactory' => [['025']],
-		'App\Components\Device\Add\Measurement\ControlFactory' => [['026']],
-		'App\Components\Device\Add\Measurement\FormFactory' => [['027']],
-		'App\Components\Device\Homepage\Devices\Grid\ControlFactory' => [['028']],
-		'App\Components\Device\Homepage\Devices\Grid\Item\ControlFactory' => [['029']],
-		'App\Components\Device\Manipulate\FormFactory' => [['030']],
-		'App\Components\Device\Show\Measurement\Grid\ControlFactory' => [['031']],
-		'App\Components\Device\Show\Measurement\Grid\Item\ControlFactory' => [['032']],
-		'App\Components\Post\Detail\ControlFactory' => [['033']],
-		'App\Components\Post\Detail\OtherPosts\ControlFactory' => [['034']],
-		'App\Components\Post\Grid\ControlFactory' => [['035']],
-		'App\Components\Post\Grid\Item\ControlFactory' => [['036']],
-		'App\Components\Post\Manipulate\ControlFactory' => [['037']],
-		'App\Components\Post\Manipulate\FormFactory' => [['038']],
-		'App\Components\Post\Other\Filter\ControlFactory' => [['039']],
-		'App\Components\Post\Other\Filter\FormFactory' => [['040']],
-		'App\Components\Post\Other\Grid\ControlFactory' => [['041']],
-		'App\Components\Post\Other\Grid\Item\ControlFactory' => [['042']],
-		'App\Components\User\Profile\ControlFactory' => [['043']],
-		'App\Components\User\Profile\Comment\item\ControlFactory' => [['044']],
-		'App\Components\User\Profile\Verification\ControlFactory' => [['045']],
-		'App\Components\User\Profile\Verification\FormFactory' => [['046']],
-		'App\Components\User\Register\ControlFactory' => [['047']],
-		'App\Components\User\Register\FormFactory' => [['048']],
-		'App\components\User\Sign\In\ControlFactory' => [['049']],
-		'App\components\User\Sign\In\FormFactory' => [['050']],
-		'App\Core\FormFactory' => [['051']],
+		'App\Model\BaseManager' => [['06', '07', '08', '09', '010', '011', '012', '013']],
+		'App\Model\CommentManager' => [['06']],
+		'App\Model\ConsumptionManager' => [['07']],
+		'App\Model\DashboardManager' => [['08']],
+		'App\Model\DeviceManager' => [['09']],
+		'App\Model\PostManager' => [['010']],
+		'App\Model\RoleManager' => [['011']],
+		'App\Model\SettingManager' => [['012']],
+		'App\Model\UserManager' => [['013']],
+		'App\Components\Comments\Add\ControlFactory' => [['014']],
+		'App\Components\Comments\Add\FormFactory' => [['015']],
+		'App\Components\Comments\DeleteComment\FormFactory' => [['016']],
+		'App\components\Comments\FormFactory' => [['017']],
+		'App\Components\Comments\Grid\ControlFactory' => [['018']],
+		'App\Components\Comments\Grid\Item\ControlFactory' => [['019']],
+		'App\Components\Device\Add\Device\ControlFactory' => [['020']],
+		'App\Components\Device\Add\Device\FormFactory' => [['021']],
+		'App\Components\Device\Add\Measurement\ControlFactory' => [['022']],
+		'App\Components\Device\Add\Measurement\FormFactory' => [['023']],
+		'App\Components\Device\Homepage\Devices\Grid\ControlFactory' => [['024']],
+		'App\Components\Device\Homepage\Devices\Grid\Item\ControlFactory' => [['025']],
+		'App\Components\Device\Show\Measurement\Grid\ControlFactory' => [['026']],
+		'App\Components\Device\Show\Measurement\Grid\Item\ControlFactory' => [['027']],
+		'App\Components\Post\Detail\ControlFactory' => [['028']],
+		'App\Components\Post\Detail\OtherPosts\ControlFactory' => [['029']],
+		'App\Components\Post\Grid\ControlFactory' => [['030']],
+		'App\Components\Post\Grid\Item\ControlFactory' => [['031']],
+		'App\Components\Post\Manipulate\ControlFactory' => [['032']],
+		'App\Components\Post\Manipulate\FormFactory' => [['033']],
+		'App\Components\Post\Other\Filter\ControlFactory' => [['034']],
+		'App\Components\Post\Other\Filter\FormFactory' => [['035']],
+		'App\Components\Post\Other\Grid\ControlFactory' => [['036']],
+		'App\Components\Post\Other\Grid\Item\ControlFactory' => [['037']],
+		'App\Components\User\Profile\ControlFactory' => [['038']],
+		'App\Components\User\Profile\Comment\item\ControlFactory' => [['039']],
+		'App\Components\User\Profile\Verification\ControlFactory' => [['040']],
+		'App\Components\User\Profile\Verification\FormFactory' => [['041']],
+		'App\Components\User\Register\ControlFactory' => [['042']],
+		'App\Components\User\Register\FormFactory' => [['043']],
+		'App\components\User\Sign\In\ControlFactory' => [['044']],
+		'App\components\User\Sign\In\FormFactory' => [['045']],
+		'App\Core\FormFactory' => [['046']],
 	];
 
 
@@ -356,13 +351,7 @@ class Container_c112abe23c extends Nette\DI\Container
 	}
 
 
-	public function createService01(): App\Model\API\SklonovanieMien
-	{
-		return new App\Model\API\SklonovanieMien('1234asdf54321fdsa');
-	}
-
-
-	public function createService02(): App\Model\MailSenderUserRegister
+	public function createService01(): App\Model\MailSenderUserRegister
 	{
 		return new App\Model\MailSenderUserRegister(
 			$this->getService('application.linkGenerator'),
@@ -372,130 +361,84 @@ class Container_c112abe23c extends Nette\DI\Container
 	}
 
 
-	public function createService03(): App\Model\Authenticator
+	public function createService02(): App\Model\Authenticator
 	{
-		return new App\Model\Authenticator($this->getService('015'), $this->getService('security.passwords'), $this->getService('013'));
+		return new App\Model\Authenticator($this->getService('013'), $this->getService('security.passwords'), $this->getService('011'));
 	}
 
 
-	public function createService04(): App\Dashboard\Article\Edit\FormFactory
-	{
-		return new App\Dashboard\Article\Edit\FormFactory($this->getService('security.user'), $this->getService('010'));
-	}
-
-
-	public function createService05(): App\Model\MailSender
+	public function createService03(): App\Model\MailSender
 	{
 		return new App\Model\MailSender(
 			$this->getService('latte.templateFactory'),
 			$this->getService('application.linkGenerator'),
 			'C:\laragon\www\nette\nette_bw\web_nette_bw\app\Presenters\templates\components\emails\\',
-			$this->getService('014')
+			$this->getService('012')
 		);
 	}
 
 
-	public function createService06(): Nette\Security\Permission
+	public function createService04(): Nette\Security\Permission
 	{
 		return App\Model\AuthorizatorFactory::create();
 	}
 
 
-	public function createService07(): Nette\Application\Routers\RouteList
+	public function createService05(): Nette\Application\Routers\RouteList
 	{
 		return App\Router\RouterFactory::createRouter();
 	}
 
 
-	public function createService08(): App\Model\CommentManager
+	public function createService06(): App\Model\CommentManager
 	{
 		return new App\Model\CommentManager($this->getService('database.default.context'));
 	}
 
 
-	public function createService09(): App\Model\ConsumptionManager
+	public function createService07(): App\Model\ConsumptionManager
 	{
 		return new App\Model\ConsumptionManager($this->getService('database.default.context'));
 	}
 
 
-	public function createService010(): App\Model\DashboardManager
+	public function createService08(): App\Model\DashboardManager
 	{
-		return new App\Model\DashboardManager($this->getService('database.default.context'), $this->getService('05'));
+		return new App\Model\DashboardManager($this->getService('database.default.context'), $this->getService('03'));
 	}
 
 
-	public function createService011(): App\Model\DeviceManager
+	public function createService09(): App\Model\DeviceManager
 	{
 		return new App\Model\DeviceManager($this->getService('database.default.context'));
 	}
 
 
-	public function createService012(): App\Model\PostManager
+	public function createService010(): App\Model\PostManager
 	{
 		return new App\Model\PostManager($this->getService('database.default.context'));
 	}
 
 
-	public function createService013(): App\Model\RoleManager
+	public function createService011(): App\Model\RoleManager
 	{
 		return new App\Model\RoleManager($this->getService('database.default.context'));
 	}
 
 
-	public function createService014(): App\Model\SettingManager
+	public function createService012(): App\Model\SettingManager
 	{
 		return new App\Model\SettingManager($this->getService('database.default.context'), $this->getService('cache.storage'));
 	}
 
 
-	public function createService015(): App\Model\UserManager
+	public function createService013(): App\Model\UserManager
 	{
 		return new App\Model\UserManager($this->getService('database.default.context'));
 	}
 
 
-	public function createService016(): App\Components\Clanok\Mriezka\ControlFactory
-	{
-		return new class ($this) implements App\Components\Clanok\Mriezka\ControlFactory {
-			private $container;
-
-
-			public function __construct(Container_c112abe23c $container)
-			{
-				$this->container = $container;
-			}
-
-
-			public function create(): App\Components\Clanok\Mriezka\Control
-			{
-				return new App\Components\Clanok\Mriezka\Control($this->container->getService('012'), $this->container->getService('017'));
-			}
-		};
-	}
-
-
-	public function createService017(): App\Components\Clanok\Mriezka\Polozka\ControlFactory
-	{
-		return new class ($this) implements App\Components\Clanok\Mriezka\Polozka\ControlFactory {
-			private $container;
-
-
-			public function __construct(Container_c112abe23c $container)
-			{
-				$this->container = $container;
-			}
-
-
-			public function create(Nette\Database\Table\ActiveRow $polozka): App\Components\Clanok\Mriezka\Polozka\Control
-			{
-				return new App\Components\Clanok\Mriezka\Polozka\Control($polozka);
-			}
-		};
-	}
-
-
-	public function createService018(): App\Components\Comments\Add\ControlFactory
+	public function createService014(): App\Components\Comments\Add\ControlFactory
 	{
 		return new class ($this) implements App\Components\Comments\Add\ControlFactory {
 			private $container;
@@ -509,35 +452,35 @@ class Container_c112abe23c extends Nette\DI\Container
 
 			public function create(callable $onSuccess, ?int $postId = null): App\Components\Comments\Add\Control
 			{
-				return new App\Components\Comments\Add\Control($this->container->getService('019'), $onSuccess, $postId);
+				return new App\Components\Comments\Add\Control($this->container->getService('015'), $onSuccess, $postId);
 			}
 		};
 	}
 
 
-	public function createService019(): App\Components\Comments\Add\FormFactory
+	public function createService015(): App\Components\Comments\Add\FormFactory
 	{
 		return new App\Components\Comments\Add\FormFactory(
-			$this->getService('08'),
-			$this->getService('051'),
+			$this->getService('06'),
+			$this->getService('046'),
 			$this->getService('security.user')
 		);
 	}
 
 
-	public function createService020(): App\Components\Comments\DeleteComment\FormFactory
+	public function createService016(): App\Components\Comments\DeleteComment\FormFactory
 	{
-		return new App\Components\Comments\DeleteComment\FormFactory($this->getService('08'), $this->getService('051'));
+		return new App\Components\Comments\DeleteComment\FormFactory($this->getService('06'), $this->getService('046'));
 	}
 
 
-	public function createService021(): App\components\Comments\FormFactory
+	public function createService017(): App\components\Comments\FormFactory
 	{
-		return new App\components\Comments\FormFactory($this->getService('08'), $this->getService('051'));
+		return new App\components\Comments\FormFactory($this->getService('06'), $this->getService('046'));
 	}
 
 
-	public function createService022(): App\Components\Comments\Grid\ControlFactory
+	public function createService018(): App\Components\Comments\Grid\ControlFactory
 	{
 		return new class ($this) implements App\Components\Comments\Grid\ControlFactory {
 			private $container;
@@ -551,13 +494,13 @@ class Container_c112abe23c extends Nette\DI\Container
 
 			public function create(?int $postId = null): App\Components\Comments\Grid\Control
 			{
-				return new App\Components\Comments\Grid\Control($this->container->getService('08'), $postId, $this->container->getService('023'));
+				return new App\Components\Comments\Grid\Control($this->container->getService('06'), $postId, $this->container->getService('019'));
 			}
 		};
 	}
 
 
-	public function createService023(): App\Components\Comments\Grid\Item\ControlFactory
+	public function createService019(): App\Components\Comments\Grid\Item\ControlFactory
 	{
 		return new class ($this) implements App\Components\Comments\Grid\Item\ControlFactory {
 			private $container;
@@ -576,7 +519,7 @@ class Container_c112abe23c extends Nette\DI\Container
 				return new App\Components\Comments\Grid\Item\Control(
 					$item,
 					$onDelete,
-					$this->container->getService('08'),
+					$this->container->getService('06'),
 					$this->container->getService('security.user')
 				);
 			}
@@ -584,7 +527,7 @@ class Container_c112abe23c extends Nette\DI\Container
 	}
 
 
-	public function createService024(): App\Components\Device\Add\Device\ControlFactory
+	public function createService020(): App\Components\Device\Add\Device\ControlFactory
 	{
 		return new class ($this) implements App\Components\Device\Add\Device\ControlFactory {
 			private $container;
@@ -599,7 +542,7 @@ class Container_c112abe23c extends Nette\DI\Container
 			public function create(callable $onSuccess, ?int $authorId = null): App\Components\Device\Add\Device\Control
 			{
 				return new App\Components\Device\Add\Device\Control(
-					$this->container->getService('025'),
+					$this->container->getService('021'),
 					$onSuccess,
 					$authorId,
 					$this->container->getService('security.user')
@@ -609,13 +552,13 @@ class Container_c112abe23c extends Nette\DI\Container
 	}
 
 
-	public function createService025(): App\Components\Device\Add\Device\FormFactory
+	public function createService021(): App\Components\Device\Add\Device\FormFactory
 	{
-		return new App\Components\Device\Add\Device\FormFactory($this->getService('011'), $this->getService('051'));
+		return new App\Components\Device\Add\Device\FormFactory($this->getService('09'), $this->getService('046'));
 	}
 
 
-	public function createService026(): App\Components\Device\Add\Measurement\ControlFactory
+	public function createService022(): App\Components\Device\Add\Measurement\ControlFactory
 	{
 		return new class ($this) implements App\Components\Device\Add\Measurement\ControlFactory {
 			private $container;
@@ -634,7 +577,7 @@ class Container_c112abe23c extends Nette\DI\Container
 				string $deviceName
 			): App\Components\Device\Add\Measurement\Control {
 				return new App\Components\Device\Add\Measurement\Control(
-					$this->container->getService('027'),
+					$this->container->getService('023'),
 					$onSuccess,
 					$measurementId,
 					$deviceId,
@@ -645,13 +588,13 @@ class Container_c112abe23c extends Nette\DI\Container
 	}
 
 
-	public function createService027(): App\Components\Device\Add\Measurement\FormFactory
+	public function createService023(): App\Components\Device\Add\Measurement\FormFactory
 	{
-		return new App\Components\Device\Add\Measurement\FormFactory($this->getService('09'), $this->getService('security.user'));
+		return new App\Components\Device\Add\Measurement\FormFactory($this->getService('07'), $this->getService('security.user'));
 	}
 
 
-	public function createService028(): App\Components\Device\Homepage\Devices\Grid\ControlFactory
+	public function createService024(): App\Components\Device\Homepage\Devices\Grid\ControlFactory
 	{
 		return new class ($this) implements App\Components\Device\Homepage\Devices\Grid\ControlFactory {
 			private $container;
@@ -665,13 +608,13 @@ class Container_c112abe23c extends Nette\DI\Container
 
 			public function create(?int $authorId): App\Components\Device\Homepage\Devices\Grid\Control
 			{
-				return new App\Components\Device\Homepage\Devices\Grid\Control($this->container->getService('011'), $this->container->getService('029'), $authorId);
+				return new App\Components\Device\Homepage\Devices\Grid\Control($this->container->getService('09'), $this->container->getService('025'), $authorId);
 			}
 		};
 	}
 
 
-	public function createService029(): App\Components\Device\Homepage\Devices\Grid\Item\ControlFactory
+	public function createService025(): App\Components\Device\Homepage\Devices\Grid\Item\ControlFactory
 	{
 		return new class ($this) implements App\Components\Device\Homepage\Devices\Grid\Item\ControlFactory {
 			private $container;
@@ -690,7 +633,7 @@ class Container_c112abe23c extends Nette\DI\Container
 				return new App\Components\Device\Homepage\Devices\Grid\Item\Control(
 					$item,
 					$onDelete,
-					$this->container->getService('011'),
+					$this->container->getService('09'),
 					$this->container->getService('security.user')
 				);
 			}
@@ -698,13 +641,7 @@ class Container_c112abe23c extends Nette\DI\Container
 	}
 
 
-	public function createService030(): App\Components\Device\Manipulate\FormFactory
-	{
-		return new App\Components\Device\Manipulate\FormFactory;
-	}
-
-
-	public function createService031(): App\Components\Device\Show\Measurement\Grid\ControlFactory
+	public function createService026(): App\Components\Device\Show\Measurement\Grid\ControlFactory
 	{
 		return new class ($this) implements App\Components\Device\Show\Measurement\Grid\ControlFactory {
 			private $container;
@@ -718,13 +655,13 @@ class Container_c112abe23c extends Nette\DI\Container
 
 			public function create(int $deviceId): App\Components\Device\Show\Measurement\Grid\Control
 			{
-				return new App\Components\Device\Show\Measurement\Grid\Control($this->container->getService('09'), $deviceId, $this->container->getService('032'));
+				return new App\Components\Device\Show\Measurement\Grid\Control($this->container->getService('07'), $deviceId, $this->container->getService('027'));
 			}
 		};
 	}
 
 
-	public function createService032(): App\Components\Device\Show\Measurement\Grid\Item\ControlFactory
+	public function createService027(): App\Components\Device\Show\Measurement\Grid\Item\ControlFactory
 	{
 		return new class ($this) implements App\Components\Device\Show\Measurement\Grid\Item\ControlFactory {
 			private $container;
@@ -743,7 +680,7 @@ class Container_c112abe23c extends Nette\DI\Container
 				return new App\Components\Device\Show\Measurement\Grid\Item\Control(
 					$item,
 					$onDelete,
-					$this->container->getService('09'),
+					$this->container->getService('07'),
 					$this->container->getService('security.user')
 				);
 			}
@@ -751,7 +688,7 @@ class Container_c112abe23c extends Nette\DI\Container
 	}
 
 
-	public function createService033(): App\Components\Post\Detail\ControlFactory
+	public function createService028(): App\Components\Post\Detail\ControlFactory
 	{
 		return new class ($this) implements App\Components\Post\Detail\ControlFactory {
 			private $container;
@@ -765,13 +702,13 @@ class Container_c112abe23c extends Nette\DI\Container
 
 			public function create(App\Model\Entity\PostResource $item, Closure $onDelete): App\Components\Post\Detail\Control
 			{
-				return new App\Components\Post\Detail\Control($item, $onDelete, $this->container->getService('012'), $this->container->getService('security.user'));
+				return new App\Components\Post\Detail\Control($item, $onDelete, $this->container->getService('010'), $this->container->getService('security.user'));
 			}
 		};
 	}
 
 
-	public function createService034(): App\Components\Post\Detail\OtherPosts\ControlFactory
+	public function createService029(): App\Components\Post\Detail\OtherPosts\ControlFactory
 	{
 		return new class ($this) implements App\Components\Post\Detail\OtherPosts\ControlFactory {
 			private $container;
@@ -786,7 +723,7 @@ class Container_c112abe23c extends Nette\DI\Container
 			public function create(?int $postId, ?int $authorId): App\Components\Post\Detail\OtherPosts\Control
 			{
 				return new App\Components\Post\Detail\OtherPosts\Control(
-					$this->container->getService('012'),
+					$this->container->getService('010'),
 					$postId,
 					$authorId,
 					$this->container->getService('security.user')
@@ -796,7 +733,7 @@ class Container_c112abe23c extends Nette\DI\Container
 	}
 
 
-	public function createService035(): App\Components\Post\Grid\ControlFactory
+	public function createService030(): App\Components\Post\Grid\ControlFactory
 	{
 		return new class ($this) implements App\Components\Post\Grid\ControlFactory {
 			private $container;
@@ -811,8 +748,8 @@ class Container_c112abe23c extends Nette\DI\Container
 			public function create(?int $authorId): App\Components\Post\Grid\Control
 			{
 				return new App\Components\Post\Grid\Control(
-					$this->container->getService('012'),
-					$this->container->getService('036'),
+					$this->container->getService('010'),
+					$this->container->getService('031'),
 					$authorId,
 					$this->container->getService('security.user')
 				);
@@ -821,7 +758,7 @@ class Container_c112abe23c extends Nette\DI\Container
 	}
 
 
-	public function createService036(): App\Components\Post\Grid\Item\ControlFactory
+	public function createService031(): App\Components\Post\Grid\Item\ControlFactory
 	{
 		return new class ($this) implements App\Components\Post\Grid\Item\ControlFactory {
 			private $container;
@@ -841,7 +778,7 @@ class Container_c112abe23c extends Nette\DI\Container
 	}
 
 
-	public function createService037(): App\Components\Post\Manipulate\ControlFactory
+	public function createService032(): App\Components\Post\Manipulate\ControlFactory
 	{
 		return new class ($this) implements App\Components\Post\Manipulate\ControlFactory {
 			private $container;
@@ -855,23 +792,23 @@ class Container_c112abe23c extends Nette\DI\Container
 
 			public function create(callable $onSuccess, array $entity): App\Components\Post\Manipulate\Control
 			{
-				return new App\Components\Post\Manipulate\Control($this->container->getService('038'), $onSuccess, $entity);
+				return new App\Components\Post\Manipulate\Control($this->container->getService('033'), $onSuccess, $entity);
 			}
 		};
 	}
 
 
-	public function createService038(): App\Components\Post\Manipulate\FormFactory
+	public function createService033(): App\Components\Post\Manipulate\FormFactory
 	{
 		return new App\Components\Post\Manipulate\FormFactory(
-			$this->getService('010'),
-			$this->getService('051'),
+			$this->getService('08'),
+			$this->getService('046'),
 			$this->getService('security.user')
 		);
 	}
 
 
-	public function createService039(): App\Components\Post\Other\Filter\ControlFactory
+	public function createService034(): App\Components\Post\Other\Filter\ControlFactory
 	{
 		return new class ($this) implements App\Components\Post\Other\Filter\ControlFactory {
 			private $container;
@@ -885,19 +822,19 @@ class Container_c112abe23c extends Nette\DI\Container
 
 			public function create(callable $onSuccess): App\Components\Post\Other\Filter\Control
 			{
-				return new App\Components\Post\Other\Filter\Control($this->container->getService('040'), $onSuccess);
+				return new App\Components\Post\Other\Filter\Control($this->container->getService('035'), $onSuccess);
 			}
 		};
 	}
 
 
-	public function createService040(): App\Components\Post\Other\Filter\FormFactory
+	public function createService035(): App\Components\Post\Other\Filter\FormFactory
 	{
 		return new App\Components\Post\Other\Filter\FormFactory;
 	}
 
 
-	public function createService041(): App\Components\Post\Other\Grid\ControlFactory
+	public function createService036(): App\Components\Post\Other\Grid\ControlFactory
 	{
 		return new class ($this) implements App\Components\Post\Other\Grid\ControlFactory {
 			private $container;
@@ -912,8 +849,8 @@ class Container_c112abe23c extends Nette\DI\Container
 			public function create(): App\Components\Post\Other\Grid\Control
 			{
 				return new App\Components\Post\Other\Grid\Control(
-					$this->container->getService('012'),
-					$this->container->getService('042'),
+					$this->container->getService('010'),
+					$this->container->getService('037'),
 					null,
 					null,
 					$this->container->getService('security.user')
@@ -923,7 +860,7 @@ class Container_c112abe23c extends Nette\DI\Container
 	}
 
 
-	public function createService042(): App\Components\Post\Other\Grid\Item\ControlFactory
+	public function createService037(): App\Components\Post\Other\Grid\Item\ControlFactory
 	{
 		return new class ($this) implements App\Components\Post\Other\Grid\Item\ControlFactory {
 			private $container;
@@ -937,13 +874,13 @@ class Container_c112abe23c extends Nette\DI\Container
 
 			public function create(Nette\Database\Table\ActiveRow $item): App\Components\Post\Other\Grid\Item\Control
 			{
-				return new App\Components\Post\Other\Grid\Item\Control($item, $this->container->getService('012'));
+				return new App\Components\Post\Other\Grid\Item\Control($item, $this->container->getService('010'));
 			}
 		};
 	}
 
 
-	public function createService043(): App\Components\User\Profile\ControlFactory
+	public function createService038(): App\Components\User\Profile\ControlFactory
 	{
 		return new class ($this) implements App\Components\User\Profile\ControlFactory {
 			private $container;
@@ -958,16 +895,16 @@ class Container_c112abe23c extends Nette\DI\Container
 			public function create(): App\Components\User\Profile\Control
 			{
 				return new App\Components\User\Profile\Control(
-					$this->container->getService('08'),
+					$this->container->getService('06'),
 					$this->container->getService('security.user'),
-					$this->container->getService('044')
+					$this->container->getService('039')
 				);
 			}
 		};
 	}
 
 
-	public function createService044(): App\Components\User\Profile\Comment\item\ControlFactory
+	public function createService039(): App\Components\User\Profile\Comment\item\ControlFactory
 	{
 		return new class ($this) implements App\Components\User\Profile\Comment\item\ControlFactory {
 			private $container;
@@ -981,13 +918,13 @@ class Container_c112abe23c extends Nette\DI\Container
 
 			public function create(Nette\Database\Table\ActiveRow $item): App\Components\User\Profile\Comment\item\Control
 			{
-				return new App\Components\User\Profile\Comment\item\Control($this->container->getService('08'), $this->container->getService('security.user'), $item);
+				return new App\Components\User\Profile\Comment\item\Control($this->container->getService('06'), $this->container->getService('security.user'), $item);
 			}
 		};
 	}
 
 
-	public function createService045(): App\Components\User\Profile\Verification\ControlFactory
+	public function createService040(): App\Components\User\Profile\Verification\ControlFactory
 	{
 		return new class ($this) implements App\Components\User\Profile\Verification\ControlFactory {
 			private $container;
@@ -1001,19 +938,19 @@ class Container_c112abe23c extends Nette\DI\Container
 
 			public function create(callable $onSuccess): App\Components\User\Profile\Verification\Control
 			{
-				return new App\Components\User\Profile\Verification\Control($this->container->getService('046'), $onSuccess);
+				return new App\Components\User\Profile\Verification\Control($this->container->getService('041'), $onSuccess);
 			}
 		};
 	}
 
 
-	public function createService046(): App\Components\User\Profile\Verification\FormFactory
+	public function createService041(): App\Components\User\Profile\Verification\FormFactory
 	{
-		return new App\Components\User\Profile\Verification\FormFactory($this->getService('security.user'), $this->getService('03'));
+		return new App\Components\User\Profile\Verification\FormFactory($this->getService('security.user'), $this->getService('02'));
 	}
 
 
-	public function createService047(): App\Components\User\Register\ControlFactory
+	public function createService042(): App\Components\User\Register\ControlFactory
 	{
 		return new class ($this) implements App\Components\User\Register\ControlFactory {
 			private $container;
@@ -1027,19 +964,19 @@ class Container_c112abe23c extends Nette\DI\Container
 
 			public function create(callable $onSuccess): App\Components\User\Register\Control
 			{
-				return new App\Components\User\Register\Control($onSuccess, $this->container->getService('048'));
+				return new App\Components\User\Register\Control($onSuccess, $this->container->getService('043'));
 			}
 		};
 	}
 
 
-	public function createService048(): App\Components\User\Register\FormFactory
+	public function createService043(): App\Components\User\Register\FormFactory
 	{
-		return new App\Components\User\Register\FormFactory($this->getService('03'), $this->getService('02'));
+		return new App\Components\User\Register\FormFactory($this->getService('02'), $this->getService('01'));
 	}
 
 
-	public function createService049(): App\components\User\Sign\In\ControlFactory
+	public function createService044(): App\components\User\Sign\In\ControlFactory
 	{
 		return new class ($this) implements App\components\User\Sign\In\ControlFactory {
 			private $container;
@@ -1053,19 +990,19 @@ class Container_c112abe23c extends Nette\DI\Container
 
 			public function create(callable $onSuccess): App\components\User\Sign\In\Control
 			{
-				return new App\components\User\Sign\In\Control($this->container->getService('050'), $onSuccess);
+				return new App\components\User\Sign\In\Control($this->container->getService('045'), $onSuccess);
 			}
 		};
 	}
 
 
-	public function createService050(): App\components\User\Sign\In\FormFactory
+	public function createService045(): App\components\User\Sign\In\FormFactory
 	{
-		return new App\components\User\Sign\In\FormFactory($this->getService('security.user'), $this->getService('051'));
+		return new App\components\User\Sign\In\FormFactory($this->getService('security.user'), $this->getService('046'));
 	}
 
 
-	public function createService051(): App\Core\FormFactory
+	public function createService046(): App\Core\FormFactory
 	{
 		return new App\Core\FormFactory($this->getService('myTranslator'));
 	}
@@ -1074,22 +1011,22 @@ class Container_c112abe23c extends Nette\DI\Container
 	public function createServiceApplication__1(): App\AdminModule\Presenters\HomepagePresenter
 	{
 		$service = new App\AdminModule\Presenters\HomepagePresenter(
-			$this->getService('012'),
+			$this->getService('010'),
 			$this->getService('security.user'),
 			$this->getService('database.default.context'),
-			$this->getService('03')
+			$this->getService('02')
 		);
 		$service->injectPrimary(
 			$this,
 			$this->getService('application.presenterFactory'),
-			$this->getService('07'),
+			$this->getService('05'),
 			$this->getService('http.request'),
 			$this->getService('http.response'),
 			$this->getService('session.session'),
 			$this->getService('security.user'),
 			$this->getService('latte.templateFactory')
 		);
-		$service->inject($this->getService('035'));
+		$service->inject($this->getService('030'));
 		$service->translator = $this->getService('myTranslator');
 		$service->invalidLinkMode = 5;
 		return $service;
@@ -1102,7 +1039,7 @@ class Container_c112abe23c extends Nette\DI\Container
 		$service->injectPrimary(
 			$this,
 			$this->getService('application.presenterFactory'),
-			$this->getService('07'),
+			$this->getService('05'),
 			$this->getService('http.request'),
 			$this->getService('http.response'),
 			$this->getService('session.session'),
@@ -1126,7 +1063,7 @@ class Container_c112abe23c extends Nette\DI\Container
 		$service->injectPrimary(
 			$this,
 			$this->getService('application.presenterFactory'),
-			$this->getService('07'),
+			$this->getService('05'),
 			$this->getService('http.request'),
 			$this->getService('http.response'),
 			$this->getService('session.session'),
@@ -1147,37 +1084,37 @@ class Container_c112abe23c extends Nette\DI\Container
 
 	public function createServiceApplication__14(): NetteModule\MicroPresenter
 	{
-		return new NetteModule\MicroPresenter($this, $this->getService('http.request'), $this->getService('07'));
+		return new NetteModule\MicroPresenter($this, $this->getService('http.request'), $this->getService('05'));
 	}
 
 
 	public function createServiceApplication__2(): App\AdminModule\Presenters\PostPresenter
 	{
 		$service = new App\AdminModule\Presenters\PostPresenter(
-			$this->getService('08'),
-			$this->getService('012'),
-			$this->getService('038'),
+			$this->getService('06'),
 			$this->getService('010'),
 			$this->getService('033'),
+			$this->getService('08'),
+			$this->getService('028'),
 			$this->getService('database.default.context')
 		);
 		$service->injectPrimary(
 			$this,
 			$this->getService('application.presenterFactory'),
-			$this->getService('07'),
+			$this->getService('05'),
 			$this->getService('http.request'),
 			$this->getService('http.response'),
 			$this->getService('session.session'),
 			$this->getService('security.user'),
 			$this->getService('latte.templateFactory')
 		);
-		$service->injectCommentAddControlFactory($this->getService('018'));
-		$service->injectCommentsGridControlFactory($this->getService('022'));
-		$service->injectPostManipulateControlFactory($this->getService('037'));
-		$service->injectPostDetailControlFactory($this->getService('033'));
-		$service->injectOtherPostFactory($this->getService('034'));
-		$service->inject($this->getService('041'), $this->getService('012'));
-		$service->injectFilterPostForm($this->getService('039'), $this->getService('012'));
+		$service->injectCommentAddControlFactory($this->getService('014'));
+		$service->injectCommentsGridControlFactory($this->getService('018'));
+		$service->injectPostManipulateControlFactory($this->getService('032'));
+		$service->injectPostDetailControlFactory($this->getService('028'));
+		$service->injectOtherPostFactory($this->getService('029'));
+		$service->inject($this->getService('036'), $this->getService('010'));
+		$service->injectFilterPostForm($this->getService('034'), $this->getService('010'));
 		$service->translator = $this->getService('myTranslator');
 		$service->invalidLinkMode = 5;
 		return $service;
@@ -1190,14 +1127,14 @@ class Container_c112abe23c extends Nette\DI\Container
 		$service->injectPrimary(
 			$this,
 			$this->getService('application.presenterFactory'),
-			$this->getService('07'),
+			$this->getService('05'),
 			$this->getService('http.request'),
 			$this->getService('http.response'),
 			$this->getService('session.session'),
 			$this->getService('security.user'),
 			$this->getService('latte.templateFactory')
 		);
-		$service->injectUserSignInControlFactory($this->getService('049'));
+		$service->injectUserSignInControlFactory($this->getService('044'));
 		$service->invalidLinkMode = 5;
 		return $service;
 	}
@@ -1206,25 +1143,25 @@ class Container_c112abe23c extends Nette\DI\Container
 	public function createServiceApplication__4(): App\FrontModule\Presenters\DevicePresenter
 	{
 		$service = new App\FrontModule\Presenters\DevicePresenter(
-			$this->getService('011'),
-			$this->getService('024'),
-			$this->getService('026'),
-			$this->getService('09')
+			$this->getService('09'),
+			$this->getService('020'),
+			$this->getService('022'),
+			$this->getService('07')
 		);
 		$service->injectPrimary(
 			$this,
 			$this->getService('application.presenterFactory'),
-			$this->getService('07'),
+			$this->getService('05'),
 			$this->getService('http.request'),
 			$this->getService('http.response'),
 			$this->getService('session.session'),
 			$this->getService('security.user'),
 			$this->getService('latte.templateFactory')
 		);
-		$service->injectDeviceAddControlFactory($this->getService('024'));
-		$service->injectdeviceAddMeasurementControlFactory($this->getService('026'));
-		$service->injectDeviceShowMeasurementGrid($this->getService('031'));
-		$service->injectHomepageDevices($this->getService('028'));
+		$service->injectDeviceAddControlFactory($this->getService('020'));
+		$service->injectdeviceAddMeasurementControlFactory($this->getService('022'));
+		$service->injectDeviceShowMeasurementGrid($this->getService('026'));
+		$service->injectHomepageDevices($this->getService('024'));
 		$service->invalidLinkMode = 5;
 		return $service;
 	}
@@ -1236,14 +1173,14 @@ class Container_c112abe23c extends Nette\DI\Container
 		$service->injectPrimary(
 			$this,
 			$this->getService('application.presenterFactory'),
-			$this->getService('07'),
+			$this->getService('05'),
 			$this->getService('http.request'),
 			$this->getService('http.response'),
 			$this->getService('session.session'),
 			$this->getService('security.user'),
 			$this->getService('latte.templateFactory')
 		);
-		$service->inject($this->getService('035'));
+		$service->inject($this->getService('030'));
 		$service->translator = $this->getService('myTranslator');
 		$service->invalidLinkMode = 5;
 		return $service;
@@ -1253,28 +1190,28 @@ class Container_c112abe23c extends Nette\DI\Container
 	public function createServiceApplication__6(): App\FrontModule\Presenters\PostPresenter
 	{
 		$service = new App\FrontModule\Presenters\PostPresenter(
-			$this->getService('08'),
-			$this->getService('012'),
-			$this->getService('038'),
+			$this->getService('06'),
 			$this->getService('010'),
 			$this->getService('033'),
+			$this->getService('08'),
+			$this->getService('028'),
 			$this->getService('database.default.context')
 		);
 		$service->injectPrimary(
 			$this,
 			$this->getService('application.presenterFactory'),
-			$this->getService('07'),
+			$this->getService('05'),
 			$this->getService('http.request'),
 			$this->getService('http.response'),
 			$this->getService('session.session'),
 			$this->getService('security.user'),
 			$this->getService('latte.templateFactory')
 		);
-		$service->injectCommentAddControlFactory($this->getService('018'));
-		$service->injectCommentsGridControlFactory($this->getService('022'));
-		$service->injectPostManipulateControlFactory($this->getService('037'));
-		$service->injectPostDetailControlFactory($this->getService('033'));
-		$service->injectOtherPostFactory($this->getService('034'));
+		$service->injectCommentAddControlFactory($this->getService('014'));
+		$service->injectCommentsGridControlFactory($this->getService('018'));
+		$service->injectPostManipulateControlFactory($this->getService('032'));
+		$service->injectPostDetailControlFactory($this->getService('028'));
+		$service->injectOtherPostFactory($this->getService('029'));
 		$service->translator = $this->getService('myTranslator');
 		$service->invalidLinkMode = 5;
 		return $service;
@@ -1284,23 +1221,23 @@ class Container_c112abe23c extends Nette\DI\Container
 	public function createServiceApplication__7(): App\FrontModule\Presenters\RegisterPresenter
 	{
 		$service = new App\FrontModule\Presenters\RegisterPresenter(
-			$this->getService('03'),
-			$this->getService('security.passwords'),
 			$this->getService('02'),
-			$this->getService('015')
+			$this->getService('security.passwords'),
+			$this->getService('01'),
+			$this->getService('013')
 		);
 		$service->injectPrimary(
 			$this,
 			$this->getService('application.presenterFactory'),
-			$this->getService('07'),
+			$this->getService('05'),
 			$this->getService('http.request'),
 			$this->getService('http.response'),
 			$this->getService('session.session'),
 			$this->getService('security.user'),
 			$this->getService('latte.templateFactory')
 		);
-		$service->injectUserSignInControlFactory($this->getService('049'));
-		$service->injectControlFactory($this->getService('047'));
+		$service->injectUserSignInControlFactory($this->getService('044'));
+		$service->injectControlFactory($this->getService('042'));
 		$service->invalidLinkMode = 5;
 		return $service;
 	}
@@ -1312,14 +1249,14 @@ class Container_c112abe23c extends Nette\DI\Container
 		$service->injectPrimary(
 			$this,
 			$this->getService('application.presenterFactory'),
-			$this->getService('07'),
+			$this->getService('05'),
 			$this->getService('http.request'),
 			$this->getService('http.response'),
 			$this->getService('session.session'),
 			$this->getService('security.user'),
 			$this->getService('latte.templateFactory')
 		);
-		$service->injectUserSignInControlFactory($this->getService('049'));
+		$service->injectUserSignInControlFactory($this->getService('044'));
 		$service->invalidLinkMode = 5;
 		return $service;
 	}
@@ -1327,18 +1264,18 @@ class Container_c112abe23c extends Nette\DI\Container
 
 	public function createServiceApplication__9(): App\FrontModule\Presenters\UserPresenter
 	{
-		$service = new App\FrontModule\Presenters\UserPresenter($this->getService('08'), $this->getService('012'), $this->getService('043'));
+		$service = new App\FrontModule\Presenters\UserPresenter($this->getService('06'), $this->getService('010'), $this->getService('038'));
 		$service->injectPrimary(
 			$this,
 			$this->getService('application.presenterFactory'),
-			$this->getService('07'),
+			$this->getService('05'),
 			$this->getService('http.request'),
 			$this->getService('http.response'),
 			$this->getService('session.session'),
 			$this->getService('security.user'),
 			$this->getService('latte.templateFactory')
 		);
-		$service->inject($this->getService('045'), $this->getService('02'), $this->getService('015'));
+		$service->inject($this->getService('040'), $this->getService('01'), $this->getService('013'));
 		$service->invalidLinkMode = 5;
 		return $service;
 	}
@@ -1348,7 +1285,7 @@ class Container_c112abe23c extends Nette\DI\Container
 	{
 		$service = new Nette\Application\Application(
 			$this->getService('application.presenterFactory'),
-			$this->getService('07'),
+			$this->getService('05'),
 			$this->getService('http.request'),
 			$this->getService('http.response')
 		);
@@ -1359,7 +1296,7 @@ class Container_c112abe23c extends Nette\DI\Container
 			$service
 		);
 		$this->getService('tracy.bar')->addPanel(new Nette\Bridges\ApplicationTracy\RoutingPanel(
-			$this->getService('07'),
+			$this->getService('05'),
 			$this->getService('http.request'),
 			$this->getService('application.presenterFactory')
 		));
@@ -1370,7 +1307,7 @@ class Container_c112abe23c extends Nette\DI\Container
 	public function createServiceApplication__linkGenerator(): Nette\Application\LinkGenerator
 	{
 		return new Nette\Application\LinkGenerator(
-			$this->getService('07'),
+			$this->getService('05'),
 			$this->getService('http.request')->getUrl()->withoutUserInfo(),
 			$this->getService('application.presenterFactory')
 		);
@@ -1644,8 +1581,8 @@ class Container_c112abe23c extends Nette\DI\Container
 	{
 		$service = new Nette\Security\User(
 			$this->getService('security.legacyUserStorage'),
-			$this->getService('03'),
-			$this->getService('06'),
+			$this->getService('02'),
+			$this->getService('04'),
 			$this->getService('security.userStorage')
 		);
 		$this->getService('tracy.bar')->addPanel(new Nette\Bridges\SecurityTracy\UserPanel($service));

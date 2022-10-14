@@ -18,6 +18,9 @@ final class Template6290a8fa9c extends Latte\Runtime\Template
 			return get_defined_vars();
 		}
 		$this->renderBlock('content', get_defined_vars()) /* line 1 */;
+		echo '
+
+';
 		return get_defined_vars();
 	}
 
@@ -36,24 +39,21 @@ final class Template6290a8fa9c extends Latte\Runtime\Template
 		extract($this->params);
 		extract($ʟ_args);
 		unset($ʟ_args);
-		echo '
-<section id="main_content">
-    <div class="container">
-
-        <div class="row my-3 g-3"';
+		echo '    <section id="main_content">
+        <div class="container">
+            <div class="row my-3 g-3"';
 		echo ' id="' . htmlspecialchars($this->global->snippetDriver->getHtmlId('form')) . '"';
 		echo '>
 ';
 		$this->renderBlock('form', [], null, 'snippet');
-		echo '        </div>
-    </div>
-</section>
-
+		echo '            </div>
+        </div>
+    </section>
 ';
 	}
 
 
-	/** {snippet form} on line 6 */
+	/** {snippet form} on line 4 */
 	public function blockForm(array $ʟ_args): void
 	{
 		extract($this->params);
@@ -61,12 +61,13 @@ final class Template6290a8fa9c extends Latte\Runtime\Template
 		unset($ʟ_args);
 		$this->global->snippetDriver->enter("form", 'static');
 		try {
-			if ($user->isAllowed('postGrid', 'view')) /* line 8 */ {
-				/* line 9 */ $_tmp = $this->global->uiControl->getComponent("postGrid");
+			echo '                ';
+			if ($user->isAllowed('postGrid', 'view')) /* line 5 */ {
+				echo "\n";
+				/* line 6 */ $_tmp = $this->global->uiControl->getComponent("postGrid");
 				if ($_tmp instanceof Nette\Application\UI\Renderable) $_tmp->redrawControl(null, false);
 				$_tmp->render();
 			}
-			echo "\n";
 		}
 		finally {
 			$this->global->snippetDriver->leave();

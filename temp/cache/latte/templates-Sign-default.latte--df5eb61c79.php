@@ -35,11 +35,10 @@ final class Templatedf5eb61c79 extends Latte\Runtime\Template
 		extract($this->params);
 		extract($ʟ_args);
 		unset($ʟ_args);
-		echo "\n";
-		/* line 3 */ $_tmp = $this->global->uiControl->getComponent("signInForm");
+		/* line 2 */ $_tmp = $this->global->uiControl->getComponent("signInForm");
 		if ($_tmp instanceof Nette\Application\UI\Renderable) $_tmp->redrawControl(null, false);
 		$_tmp->render();
-		echo "\n";
+		
 	}
 
 }

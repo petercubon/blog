@@ -26,43 +26,39 @@ final class Template5ef8e7b0b4 extends Latte\Runtime\Template
 <div class="container-fluid pt-3">
     <nav aria-label="Page navigation example">
         <ul class="pagination pagination-sm justify-content-center">
-
             <li class="page-item">
                 <a
                         class="page-link"
                         aria-label="Previous" href="';
-		echo LR\Filters::escapeHtmlAttr($this->global->uiControl->link("page!", [1])) /* line 14 */;
+		echo LR\Filters::escapeHtmlAttr($this->global->uiControl->link("page!", [1])) /* line 12 */;
 		echo '">
                     <span aria-hidden="true">&laquo;</span>
                 </a>
             </li>
-
 ';
 		for ($i = max(1, $page - 3);
 		$i <= min($numOfPages, $page + 3);
-		$i++) /* line 22 */ {
+		$i++) /* line 19 */ {
 			echo '            <li';
-			echo ($ʟ_tmp = array_filter(['page-item', $page == $i ? 'active' : null])) ? ' class="' . LR\Filters::escapeHtmlAttr(implode(" ", array_unique($ʟ_tmp))) . '"' : "" /* line 22 */;
+			echo ($ʟ_tmp = array_filter(['page-item', $page == $i ? 'active' : null])) ? ' class="' . LR\Filters::escapeHtmlAttr(implode(" ", array_unique($ʟ_tmp))) . '"' : "" /* line 19 */;
 			echo '>
                 <a class="page-link" href="';
-			echo LR\Filters::escapeHtmlAttr($this->global->uiControl->link("page!", [$i])) /* line 24 */;
+			echo LR\Filters::escapeHtmlAttr($this->global->uiControl->link("page!", [$i])) /* line 21 */;
 			echo '">
                     ';
-			echo LR\Filters::escapeHtmlText($i) /* line 25 */;
+			echo LR\Filters::escapeHtmlText($i) /* line 22 */;
 			echo '
                 </a>
             </li>
 ';
 		}
-		echo '
-            <li class="page-item">
+		echo '            <li class="page-item">
                 <a class="page-link" aria-label="Next" href="';
-		echo LR\Filters::escapeHtmlAttr($this->global->uiControl->link("page!", [$numOfPages])) /* line 32 */;
+		echo LR\Filters::escapeHtmlAttr($this->global->uiControl->link("page!", [$numOfPages])) /* line 26 */;
 		echo '">
                     <span aria-hidden="true">&raquo;</span>
                 </a>
             </li>
-
         </ul>
     </nav>
 </div>

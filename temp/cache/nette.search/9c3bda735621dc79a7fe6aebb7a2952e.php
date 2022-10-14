@@ -2,45 +2,10 @@
 return array (
   0 => 
   array (
-    'App\\Components\\Clanok\\Mriezka\\Control' => 
-    array (
-      0 => 'C:\\laragon\\www\\nette\\nette_bw\\web_nette_bw\\app\\Components\\Clanok\\Mriezka\\Control.php',
-      1 => 1660303609,
-    ),
-    'App\\Components\\Clanok\\Mriezka\\ControlFactory' => 
-    array (
-      0 => 'C:\\laragon\\www\\nette\\nette_bw\\web_nette_bw\\app\\Components\\Clanok\\Mriezka\\ControlFactory.php',
-      1 => 1660233414,
-    ),
-    'App\\Components\\Clanok\\Mriezka\\ControlTrait' => 
-    array (
-      0 => 'C:\\laragon\\www\\nette\\nette_bw\\web_nette_bw\\app\\Components\\Clanok\\Mriezka\\ControlTrait.php',
-      1 => 1660291148,
-    ),
-    'App\\Components\\Clanok\\Mriezka\\Polozka\\Control' => 
-    array (
-      0 => 'C:\\laragon\\www\\nette\\nette_bw\\web_nette_bw\\app\\Components\\Clanok\\Mriezka\\Polozka\\Control.php',
-      1 => 1660291516,
-    ),
-    'App\\Components\\Clanok\\Mriezka\\Polozka\\ControlFactory' => 
-    array (
-      0 => 'C:\\laragon\\www\\nette\\nette_bw\\web_nette_bw\\app\\Components\\Clanok\\Mriezka\\Polozka\\ControlFactory.php',
-      1 => 1660291647,
-    ),
-    'App\\Components\\Clanok\\Mriezka\\Polozka\\ControlMultipleTrait' => 
-    array (
-      0 => 'C:\\laragon\\www\\nette\\nette_bw\\web_nette_bw\\app\\Components\\Clanok\\Mriezka\\Polozka\\ControlMultipleTrait.php',
-      1 => 1660302945,
-    ),
-    'App\\Components\\Clanok\\Mriezka\\Polozka\\ControlOneTrait' => 
-    array (
-      0 => 'C:\\laragon\\www\\nette\\nette_bw\\web_nette_bw\\app\\Components\\Clanok\\Mriezka\\Polozka\\ControlOneTrait.php',
-      1 => 1660302380,
-    ),
     'App\\Components\\Comments\\Add\\Control' => 
     array (
       0 => 'C:\\laragon\\www\\nette\\nette_bw\\web_nette_bw\\app\\Components\\Comments\\Add\\Control.php',
-      1 => 1663358627,
+      1 => 1665591584,
     ),
     'App\\Components\\Comments\\Add\\ControlFactory' => 
     array (
@@ -50,7 +15,7 @@ return array (
     'App\\Components\\Comments\\Add\\FormFactory' => 
     array (
       0 => 'C:\\laragon\\www\\nette\\nette_bw\\web_nette_bw\\app\\Components\\Comments\\Add\\FormFactory.php',
-      1 => 1665337245,
+      1 => 1665591613,
     ),
     'App\\Components\\Comments\\Add\\PresenterTrait' => 
     array (
@@ -65,17 +30,17 @@ return array (
     'App\\Components\\Comments\\DeleteComment\\Control' => 
     array (
       0 => 'C:\\laragon\\www\\nette\\nette_bw\\web_nette_bw\\app\\Components\\Comments\\DeleteComment\\Control.php',
-      1 => 1660121355,
+      1 => 1665591621,
     ),
     'App\\Components\\Comments\\DeleteComment\\FormFactory' => 
     array (
       0 => 'C:\\laragon\\www\\nette\\nette_bw\\web_nette_bw\\app\\Components\\Comments\\DeleteComment\\FormFactory.php',
-      1 => 1662030320,
+      1 => 1665591645,
     ),
     'App\\Components\\Comments\\DeleteComment\\PresenterTrait' => 
     array (
       0 => 'C:\\laragon\\www\\nette\\nette_bw\\web_nette_bw\\app\\Components\\Comments\\DeleteComment\\PresenterTrait.php',
-      1 => 1660122945,
+      1 => 1665591649,
     ),
     'App\\components\\Comments\\FormFactory' => 
     array (
@@ -85,7 +50,7 @@ return array (
     'App\\Components\\Comments\\Grid\\Control' => 
     array (
       0 => 'C:\\laragon\\www\\nette\\nette_bw\\web_nette_bw\\app\\Components\\Comments\\Grid\\Control.php',
-      1 => 1664357354,
+      1 => 1665591771,
     ),
     'App\\Components\\Comments\\Grid\\ControlFactory' => 
     array (
@@ -110,7 +75,7 @@ return array (
     'App\\Components\\Comments\\Grid\\Item\\ControlMultipleTrait' => 
     array (
       0 => 'C:\\laragon\\www\\nette\\nette_bw\\web_nette_bw\\app\\Components\\Comments\\Grid\\Item\\ControlMultipleTrait.php',
-      1 => 1662139873,
+      1 => 1665591673,
     ),
     'App\\Components\\Comments\\Grid\\Item\\ControlOneTrait' => 
     array (
@@ -160,7 +125,7 @@ return array (
     'App\\Components\\Device\\Homepage\\Devices\\Grid\\Control' => 
     array (
       0 => 'C:\\laragon\\www\\nette\\nette_bw\\web_nette_bw\\app\\Components\\Device\\Homepage\\Devices\\Grid\\Control.php',
-      1 => 1665220074,
+      1 => 1665591875,
     ),
     'App\\Components\\Device\\Homepage\\Devices\\Grid\\ControlFactory' => 
     array (
@@ -180,32 +145,22 @@ return array (
     'App\\Components\\Device\\Homepage\\Devices\\Grid\\Item\\ControlMultipleTrait' => 
     array (
       0 => 'C:\\laragon\\www\\nette\\nette_bw\\web_nette_bw\\app\\Components\\Device\\Homepage\\Devices\\Grid\\Item\\ControlMultipleTrait.php',
-      1 => 1664526333,
+      1 => 1665591851,
     ),
     'App\\Components\\Device\\Homepage\\Devices\\Grid\\Item\\ControlOneTrait' => 
     array (
       0 => 'C:\\laragon\\www\\nette\\nette_bw\\web_nette_bw\\app\\Components\\Device\\Homepage\\Devices\\Grid\\Item\\ControlOneTrait.php',
-      1 => 1663761713,
+      1 => 1665591857,
     ),
     'App\\Components\\Device\\Homepage\\Devices\\Grid\\PresenterTrait' => 
     array (
       0 => 'C:\\laragon\\www\\nette\\nette_bw\\web_nette_bw\\app\\Components\\Device\\Homepage\\Devices\\Grid\\PresenterTrait.php',
-      1 => 1664525864,
-    ),
-    'App\\Components\\Device\\Manipulate\\Control' => 
-    array (
-      0 => 'C:\\laragon\\www\\nette\\nette_bw\\web_nette_bw\\app\\Components\\Device\\Manipulate\\Control.php',
-      1 => 1663766704,
-    ),
-    'App\\Components\\Device\\Manipulate\\FormFactory' => 
-    array (
-      0 => 'C:\\laragon\\www\\nette\\nette_bw\\web_nette_bw\\app\\Components\\Device\\Manipulate\\FormFactory.php',
-      1 => 1663766921,
+      1 => 1665591887,
     ),
     'App\\Components\\Device\\Show\\Measurement\\Grid\\Control' => 
     array (
       0 => 'C:\\laragon\\www\\nette\\nette_bw\\web_nette_bw\\app\\Components\\Device\\Show\\Measurement\\Grid\\Control.php',
-      1 => 1663753702,
+      1 => 1665592357,
     ),
     'App\\Components\\Device\\Show\\Measurement\\Grid\\ControlFactory' => 
     array (
@@ -220,7 +175,7 @@ return array (
     'App\\Components\\Device\\Show\\Measurement\\Grid\\Item\\Control' => 
     array (
       0 => 'C:\\laragon\\www\\nette\\nette_bw\\web_nette_bw\\app\\Components\\Device\\Show\\Measurement\\Grid\\Item\\Control.php',
-      1 => 1664548571,
+      1 => 1665592208,
     ),
     'App\\Components\\Device\\Show\\Measurement\\Grid\\Item\\ControlFactory' => 
     array (
@@ -230,7 +185,7 @@ return array (
     'App\\Components\\Device\\Show\\Measurement\\Grid\\Item\\ControlMultipleTrait' => 
     array (
       0 => 'C:\\laragon\\www\\nette\\nette_bw\\web_nette_bw\\app\\Components\\Device\\Show\\Measurement\\Grid\\Item\\ControlMultipleTrait.php',
-      1 => 1664549989,
+      1 => 1665592315,
     ),
     'App\\Components\\Device\\Show\\Measurement\\Grid\\Item\\ControlOneTrait' => 
     array (
@@ -270,7 +225,7 @@ return array (
     'App\\Components\\Post\\Grid\\Control' => 
     array (
       0 => 'C:\\laragon\\www\\nette\\nette_bw\\web_nette_bw\\app\\Components\\Post\\Grid\\Control.php',
-      1 => 1665341501,
+      1 => 1665592475,
     ),
     'App\\Components\\Post\\Grid\\ControlFactory' => 
     array (
@@ -295,7 +250,7 @@ return array (
     'App\\Components\\Post\\Grid\\Item\\ControlMultipleTrait' => 
     array (
       0 => 'C:\\laragon\\www\\nette\\nette_bw\\web_nette_bw\\app\\Components\\Post\\Grid\\Item\\ControlMultipleTrait.php',
-      1 => 1662147321,
+      1 => 1665592454,
     ),
     'App\\Components\\Post\\Grid\\Item\\ControlOneTrait' => 
     array (
@@ -310,7 +265,7 @@ return array (
     'App\\Components\\Post\\Manipulate\\Control' => 
     array (
       0 => 'C:\\laragon\\www\\nette\\nette_bw\\web_nette_bw\\app\\Components\\Post\\Manipulate\\Control.php',
-      1 => 1662308256,
+      1 => 1665592541,
     ),
     'App\\Components\\Post\\Manipulate\\ControlFactory' => 
     array (
@@ -320,7 +275,7 @@ return array (
     'App\\Components\\Post\\Manipulate\\FormFactory' => 
     array (
       0 => 'C:\\laragon\\www\\nette\\nette_bw\\web_nette_bw\\app\\Components\\Post\\Manipulate\\FormFactory.php',
-      1 => 1664622881,
+      1 => 1665592585,
     ),
     'App\\Components\\Post\\Manipulate\\PresenterTrait' => 
     array (
@@ -370,7 +325,7 @@ return array (
     'App\\Components\\Post\\Other\\Grid\\Item\\PresenterTrait' => 
     array (
       0 => 'C:\\laragon\\www\\nette\\nette_bw\\web_nette_bw\\app\\Components\\Post\\Other\\Grid\\Item\\PresenterTrait.php',
-      1 => 1664649094,
+      1 => 1665592634,
     ),
     'App\\Components\\Post\\Other\\Grid\\PresenterTrait' => 
     array (
@@ -420,12 +375,12 @@ return array (
     'App\\Components\\User\\Profile\\Verification\\FormFactory' => 
     array (
       0 => 'C:\\laragon\\www\\nette\\nette_bw\\web_nette_bw\\app\\Components\\User\\Profile\\Verification\\FormFactory.php',
-      1 => 1665424957,
+      1 => 1665592676,
     ),
     'App\\Components\\User\\Profile\\Verification\\PresenterTrait' => 
     array (
       0 => 'C:\\laragon\\www\\nette\\nette_bw\\web_nette_bw\\app\\Components\\User\\Profile\\Verification\\PresenterTrait.php',
-      1 => 1665427185,
+      1 => 1665592682,
     ),
     'App\\Components\\User\\Register\\Control' => 
     array (
@@ -445,7 +400,7 @@ return array (
     'App\\Components\\User\\Register\\PresenterTrait' => 
     array (
       0 => 'C:\\laragon\\www\\nette\\nette_bw\\web_nette_bw\\app\\Components\\User\\Register\\PresenterTrait.php',
-      1 => 1664181388,
+      1 => 1665592704,
     ),
     'App\\components\\User\\Sign\\In\\Control' => 
     array (
@@ -460,12 +415,12 @@ return array (
     'App\\components\\User\\Sign\\In\\FormFactory' => 
     array (
       0 => 'C:\\laragon\\www\\nette\\nette_bw\\web_nette_bw\\app\\Components\\User\\Sign\\In\\FormFactory.php',
-      1 => 1662386635,
+      1 => 1665592726,
     ),
     'App\\components\\User\\Sign\\In\\PresenterTrait' => 
     array (
       0 => 'C:\\laragon\\www\\nette\\nette_bw\\web_nette_bw\\app\\Components\\User\\Sign\\In\\PresenterTrait.php',
-      1 => 1663920321,
+      1 => 1665592761,
     ),
   ),
   1 => 

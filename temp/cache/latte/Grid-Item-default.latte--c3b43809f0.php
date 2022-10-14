@@ -25,7 +25,7 @@ final class Templatec3b43809f0 extends Latte\Runtime\Template
 		echo '>
 ';
 		$this->renderBlock('comments', [], null, 'snippet');
-		echo '    </div>
+		echo '</div>
 
 
 ';
@@ -37,7 +37,7 @@ final class Templatec3b43809f0 extends Latte\Runtime\Template
 	{
 		extract($this->params);
 		if (!$this->getReferringTemplate() || $this->getReferenceType() === "extends") {
-			foreach (array_intersect_key(['flash' => '4'], $this->params) as $ʟ_v => $ʟ_l) {
+			foreach (array_intersect_key(['flash' => '3'], $this->params) as $ʟ_v => $ʟ_l) {
 				trigger_error("Variable \$$ʟ_v overwritten in foreach on line $ʟ_l");
 			}
 		}
@@ -54,18 +54,16 @@ final class Templatec3b43809f0 extends Latte\Runtime\Template
 		unset($ʟ_args);
 		$this->global->snippetDriver->enter("flashes", 'static');
 		try {
-			echo "\n";
 			$iterations = 0;
-			foreach ($flashes as $flash) /* line 4 */ {
+			foreach ($flashes as $flash) /* line 3 */ {
 				echo '    <div class="alert alert-danger" role="alert">
         ';
-				echo LR\Filters::escapeHtmlText($flash->message) /* line 5 */;
+				echo LR\Filters::escapeHtmlText($flash->message) /* line 4 */;
 				echo '
     </div>
 ';
 				$iterations++;
 			}
-			echo "\n";
 		}
 		finally {
 			$this->global->snippetDriver->leave();
@@ -74,7 +72,7 @@ final class Templatec3b43809f0 extends Latte\Runtime\Template
 	}
 
 
-	/** {snippet comments} on line 10 */
+	/** {snippet comments} on line 8 */
 	public function blockComments(array $ʟ_args): void
 	{
 		extract($this->params);
@@ -85,28 +83,26 @@ final class Templatec3b43809f0 extends Latte\Runtime\Template
 			echo '    <div class="col">
         <p class="fw-bold">
             <i class="bi bi-chat-right-text me-2"></i>';
-			echo LR\Filters::escapeHtmlText($item->name) /* line 13 */;
+			echo LR\Filters::escapeHtmlText($item->name) /* line 11 */;
 			echo '
         </p>
     </div>
     <div class="col text-end fw-bold text-secondary">
         <small>
             <i class="bi bi-envelope-open me-1"></i>';
-			echo LR\Filters::escapeHtmlText($item->email) /* line 18 */;
+			echo LR\Filters::escapeHtmlText($item->email) /* line 16 */;
 			echo '
         </small>
         <small>
             <i class="bi bi-clock ms-2 me-1"></i> ';
-			echo LR\Filters::escapeHtmlText(($this->filters->date)($item->created_at, 'd.m.Y, H:i')) /* line 21 */;
+			echo LR\Filters::escapeHtmlText(($this->filters->date)($item->created_at, 'd.m.Y, H:i')) /* line 19 */;
 			echo '
         </small>
         <small>
-
         <!-- Button trigger modal -->
         <button class="btn btn-sm btn-outline-danger border-0" data-bs-toggle="modal" data-bs-target="#exampleModal">
             <i class="bi bi-trash"></i> zmazať komentár
         </button>
-
             <!-- Modal -->
             <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered">
@@ -116,9 +112,9 @@ final class Templatec3b43809f0 extends Latte\Runtime\Template
                         </div>
                         <div class="modal-footer">
 ';
-			if ($user->isAllowed($item, 'delete')) /* line 38 */ {
+			if ($user->isAllowed($item, 'delete')) /* line 34 */ {
 				echo '                            <a class="nav-link text-danger ajax" href="';
-				echo LR\Filters::escapeHtmlAttr($this->global->uiControl->link("delete!")) /* line 38 */;
+				echo LR\Filters::escapeHtmlAttr($this->global->uiControl->link("delete!")) /* line 34 */;
 				echo '">
                                 <i class="bi bi-trash text-danger"></i> zmazať komentár
                             </a>
@@ -128,19 +124,12 @@ final class Templatec3b43809f0 extends Latte\Runtime\Template
                     </div>
                 </div>
             </div>
-
-
-
-
-
-
-
         </small>
     </div>
     <div class="row">
         <div class="col">
             ';
-			echo LR\Filters::escapeHtmlText($item->content) /* line 56 */;
+			echo LR\Filters::escapeHtmlText($item->content) /* line 45 */;
 			echo '
         </div>
     </div>
